@@ -1,0 +1,37 @@
+BODY {
+   background-color: #fcd4d4;
+   margin: 5;
+}
+#page-title{       
+       font-family: Georgia, Verdana, Arial, Helvetica, sans-serif;
+       font-size: 45pt;
+       color: #373634;
+       text-align: center;
+       margin-bottom: 2px;
+       margin-top: 2px;
+
+}
+.sottotitolo_header {
+       font-family: Georgia, Verdana, Arial, Helvetica, sans-serif;
+       font-size: 20pt;
+       color: #373634;
+       text-align: center;
+}
+.update-review-button{ 
+    display: none;
+}
+
+.delete-review-button{
+    display: none;
+}
+
+.rounded-cell{ /*arrotondo i bordi delle celle coi titoli Titolo, Prodotto recensito e Testo*/
+        border-radius: 8px; 
+}
+
+/*text-center è la parte della tabella con i bottoni, è una classe predefinita bootstrap che mette gli elementi al centro
+qui nel css aggiungo solo l'arrotondamento bordi. Se tolgo dal css gli elementi rimangono comunque al centro*/
+.text-center{
+    border-radius: 8px; 
+}
+

@@ -1,0 +1,72 @@
+BODY {
+   background-color: #fcd4d4;
+   margin: 5;
+}
+
+.titoli_pagina { /*scritte piccole in nero centrate ad esempio in home e homepage*/
+       font-family: Georgia, Verdana, Arial, Helvetica, sans-serif;
+       font-size: 10pt;
+       color: black;
+       text-align: center;
+}
+
+.titolo_header { /*titolo grande ad es Urumina in home e homepage*/
+       font-family: Georgia, Verdana, Arial, Helvetica, sans-serif;
+       font-size: 45pt;
+       color: #373634;
+       text-align: center;
+       margin-bottom: 2px;
+       margin-top: 2px;
+}
+
+.sottotitolo_header { /*un po meno grosso di titolo_header, circa la metà. Per titoli piu piccoli*/
+       font-family: Georgia, Verdana, Arial, Helvetica, sans-serif;
+       font-size: 20pt;
+       color: #373634;
+       text-align: center;
+}
+
+.header{
+       width: 100%; 
+       background-color: #fcd4d4;
+       border-collapse: separate;
+       margin: 16px auto 0 auto; /*quanto spazio di margine dal bordo superiore*/
+       padding: 20px; /*quanto spazio occupa l'header in verticale*/
+}
+
+.frame { /*i riquadri bianchi che contengono i bottoni e i prodotti in homepage ad esempio*/
+    background-color: white;      
+    border: 1px solid #ccc; /*bordo grigio chiaro*/
+    padding: 20px; /*spazio tra immagine e bordo*/
+    margin-bottom: 15px; /*spazio tra i riquadri*/
+    display: inline-block; /*fa stare i riquadri uno accanto all'altro se c'è spazio*/
+    text-align: center; /*centra testo e immagine*/
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);  /*piccola ombra*/
+    max-width: 400px; /*imposta una larghezza massima, così se il contenuto è lungo, il frame non si sposta ma si allunga verticalmente, necessario per pagine prodotto in cui gli ingredienti sono molti*/
+}
+
+.form {
+    display: flex; /*display flex mette gli elementi in successione in colonna o orizzontalmente dipende da flex-direction*/
+    flex-direction: column; /*in flex-direction decidiamo di mettere gli elementi in colonna*/
+    align-items: center;    
+}
+
+.frame_scheda_prodotto { /*i riquadri bianchi nelle pagine dei songoli prodotti*/
+    background-color: white;      
+    border: 1px solid #ccc; /*bordo grigio chiaro*/
+    padding: 20px; /*spazio tra immagine e bordo*/
+    margin-bottom: 15px; /*spazio tra i riquadri*/
+    display: inline-block; /*fa stare i riquadri uno accanto all'altro se c'è spazio*/
+    text-align: left; /*centra testo e immagine all'interno dei riquadri*/
+    vertical-align: top;   /*così sono allineati correttamente*/
+    margin-right: 20px;    /*per distanziarli*/
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);  /*piccola ombra*/
+    min-height: 400px;
+    width: 400px;
+    max-width: 400px; /*imposta una larghezza massima, così se il contenuto è lungo, il frame non si sposta ma si allunga verticalmente, necessario per pgine prodotto in cui gli ingredienti sono molti*/
+}
+
+.noShow { 
+       display:none}
